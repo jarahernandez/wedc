@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Donate(){
   return (
     <main className="section">
@@ -8,7 +10,7 @@ export default function Donate(){
           businesses thrive. Until we finalize a payment processor, please contact us to make
           a pledge or sponsor a program.
         </p>
-        <a className="btn btn-primary" href="/contact" style={{ marginTop:16 }}>Get in touch</a>
+        <Link className="btn btn-primary" to="/contact" style={{ marginTop:16 }}>Get in touch</Link>
       </div>
     </main>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero from "../assets/hero.webp"; // replace with your image
 
 export default function Home(){
@@ -28,8 +29,8 @@ export default function Home(){
               grow through outreach, education, and strategic partnerships.
             </p>
             <div style={{ marginTop: 16, display:"flex", gap:12 }}>
-              <a className="btn btn-primary" href="/donate">Donate</a>
-              <a className="btn btn-secondary" href="/business-resources">Explore Resources</a>
+              <Link className="btn btn-primary" to="/donate">Donate</Link>
+              <Link className="btn btn-secondary" to="/business-resources">Explore Resources</Link>
             </div>
           </div>
         </div>
@@ -67,7 +68,7 @@ export default function Home(){
               <article key={card.t} className="card">
                 <h3 style={{ marginTop: 0 }}>{card.t}</h3>
                 <p style={{ color: "var(--muted)" }}>{card.d}</p>
-                <a href="/business-resources" style={{ color:"var(--brand-sky)", fontWeight:600 }}>Learn more →</a>
+                <Link to="/business-resources" style={{ color:"var(--brand-sky)", fontWeight:600 }}>Learn more →</Link>
               </article>
             ))}
           </div>
@@ -84,7 +85,7 @@ export default function Home(){
                 <div className="badge">Nov {10+n}, 2025 • Wayne, NJ</div>
                 <h3 style={{ marginTop: 6 }}>Small Business Clinic #{n}</h3>
                 <p style={{ color:"var(--muted)" }}>One-on-one mentorship and quick wins for local owners.</p>
-                <a href="/events" style={{ color:"var(--brand-sky)", fontWeight:600 }}>RSVP →</a>
+                <Link to="/events" style={{ color:"var(--brand-sky)", fontWeight:600 }}>RSVP →</Link>
               </article>
             ))}
           </div>
@@ -96,8 +97,8 @@ export default function Home(){
         <div className="container" style={{ display:"flex", alignItems:"center", justifyContent:"space-between", gap:12, flexWrap:"wrap" }}>
           <h3 style={{ margin:0 }}>Be part of Wayne’s renewal.</h3>
           <div style={{ display:"flex", gap:12 }}>
-            <a className="btn" style={{ background:"#fff", color:"var(--brand-primary)" }} href="/donate">Donate</a>
-            <a className="btn" style={{ border:"1px solid #fff", color:"#fff" }} href="/contact">Volunteer</a>
+            <Link className="btn" style={{ background:"#fff", color:"var(--brand-primary)" }} to="/donate">Donate</Link>
+            <Link className="btn" style={{ border:"1px solid #fff", color:"#fff" }} to="/contact">Volunteer</Link>
           </div>
         </div>
       </section>

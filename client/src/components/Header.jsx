@@ -23,7 +23,6 @@ export default function Header() {
         {/* LOGO + BRAND */}
         <div className="brand">
           <img src={wedcLogo} alt="WEDC Logo" style={{ height: "42px" }} />
-          <span>WEDC</span>
         </div>
 
         {/* HAMBURGER BUTTON (MOBILE) */}

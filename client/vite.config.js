@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/wedc/',   // ⭐ REQUIRED FOR GITHUB PAGES
+  base: process.env.NODE_ENV === "production" ? "/wedc/" : "/",
   plugins: [react()],
 })
